@@ -102,12 +102,12 @@ $discs = [
       
 <?php foreach($discs as $disc) : ?>
     <div class="album-card"> 
-        <div>
-            <figure>
-                <img src="<?= $disc['poster'] ?>" alt="<?= $disc['title'] ?>" />
-            </figure>
-            <h3 class="album-title"><?= $disc['title'] ?> </h3>
-        </div>
+    <div>
+          <figure>
+              <img src="<?= $disc['poster'] ?>" alt="<?= $disc['title'] ?>" />
+          </figure>
+          <h3 class="album-title"><?= $disc['title'] ?> </h3>
+    </div>
         <div class="info">
             <p class="author-name"><?= $disc['author'] ?></p>
             <p class="album-year"><?= $disc['year'] ?></p>
