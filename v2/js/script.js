@@ -6,7 +6,7 @@ const app = new Vue({
   },
   methods: {
     fetchDiscs() {
-      axios.get("http://localhost/php-ajax-dischi/api/discs.php").then((res) => {
+      axios.get("../../api/discs.php").then((res) => {
         this.discs = res.data;
       });
     },
