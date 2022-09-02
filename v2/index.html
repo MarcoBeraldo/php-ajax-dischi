@@ -21,11 +21,18 @@
 
   <body>
     <div id="root">
-      <header>
+      <header class="d-flex justify-content-between">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/7/75/Spotify_icon.png"
           alt="Logo"
         />
+        <select v-model="selectedGenre" @change="fetchDiscs">
+          <option value="">Tutti i generi</option>
+          <option>Rock</option>
+          <option>Pop</option>
+          <option>Jazz</option>
+          <option>Metal</option>
+        </select>
       </header>
 
       <main>
